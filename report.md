@@ -36,7 +36,7 @@ How many non zero element in $\Sigma$?
 
 Put here your lower and better resolution pictures. Explain how you generate these pictures from `task2.py`.
 
-n=30, ![figure_2.png](figure-2.png)
+n=30, , ![figure_2.png](https://github.com/OoiHp/UECM3033_assign2/blob/master/figure_2.png) ![figure_2.png](figure-2.png)
 
 n=200,  ![figure_3.png](figure-3.png)
 
