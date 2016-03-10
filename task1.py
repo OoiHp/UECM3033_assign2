@@ -35,10 +35,10 @@ def sor(A, b):
     return list(sol)
 
 def solve(A, b):
-    c=[0 for i in range(len(A))]
+    c=np.array([0 for i in range(len(A))])
     for i in range(len(A)):
-        c[i]=A[i,i]>sum(A[i,:])-A[i,i]
-    condition=c==True
+        c[i]=abs(A[i,i])>sum(abs(A[i,:]))-abs(A[i,i])
+    condition=c.all()==True
     #condition = True # State and implement your condition here
     if condition:
         print('Solve by sor(A,b)')
