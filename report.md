@@ -36,9 +36,9 @@ How many non zero element in $\Sigma$?
 
 Put here your lower and better resolution pictures. Explain how you generate these pictures from `task2.py`.
 
-n=30, , ![figure_2.png](https://github.com/OoiHp/UECM3033_assign2/blob/master/figure_2.png) ![figure_2.png](figure-2.png)
+n=30, , ![figure_2.png](https://github.com/OoiHp/UECM3033_assign2/blob/master/figure_2.png) 
 
-n=200,  ![figure_3.png](figure-3.png)
+n=200,  ![figure_3.png](https://github.com/OoiHp/UECM3033_assign2/blob/master/figure_3.png)
 
 First, each of the matrices r, g and b are decomposed into another 3 matrices $\Sigma, U$ and $V$ by $sp.linalg.svd()$. 3 new $\Sigma$ are then created from original $\Sigma$ by keeping the first n(30 and 200) none zero elements , and all other none zero elements are set to zero. The new $\Sigma$ is then convert to diagonal matrix by sp.linalg.diagsvd(), with the dimensions of 800 x 1000. New r, g, b matrices are created by $ U \Sigma_{n} V^T$, where the $\Sigma_{n}$ is the new sigma. The new r, g, b are compiled back to img to form the lower and better resolution pictures.
 
